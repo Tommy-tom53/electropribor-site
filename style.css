@@ -1,0 +1,443 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#07111f;
+  color:white;
+  overflow-x:hidden;
+}
+
+
+
+.hero{
+  position:relative;
+  min-height:100vh;
+  background:
+  linear-gradient(
+    135deg,
+    #07111f 0%,
+    #0b2f63 50%,
+    #07111f 100%
+  );
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+}
+
+nav{
+  position:relative;
+  z-index:10;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:35px 70px;
+}
+
+nav h1{
+  font-size:34px;
+  color:#60a5fa;
+  font-weight:800;
+  letter-spacing:-1px;
+}
+
+.nav-links{
+  display:flex;
+  gap:35px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:17px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#60a5fa;
+}
+
+.hero-content{
+  position:relative;
+  z-index:5;
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+  padding:190px 30px;
+}
+
+.hero-content h2{
+  font-size:82px;
+  line-height:1.05;
+  margin-bottom:35px;
+  font-weight:900;
+  letter-spacing:-3px;
+}
+
+.hero-content p{
+  max-width:850px;
+  margin:auto;
+  font-size:24px;
+  line-height:1.8;
+  color:#d1d5db;
+}
+
+.buttons{
+  margin-top:55px;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+button{
+  padding:18px 38px;
+  border:none;
+  border-radius:16px;
+  background:#2563eb;
+  color:white;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.35s;
+}
+
+button:hover{
+  transform:translateY(-5px);
+  background:#3b82f6;
+  box-shadow:0 15px 40px rgba(37,99,235,0.35);
+}
+
+.secondary{
+  background:transparent;
+  border:1px solid rgba(96,165,250,0.4);
+}
+
+
+
+.section,
+.gallery,
+.advantages,
+.tech-section,
+.history-section,
+footer{
+  padding:120px 70px;
+}
+
+.section h2,
+.gallery h2,
+.advantages h2,
+.tech-text h2,
+.history-text h2,
+footer h2{
+  text-align:center;
+  font-size:58px;
+  margin-bottom:70px;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+.card{
+  background:rgba(17,24,39,0.75);
+  border:1px solid rgba(96,165,250,0.15);
+  backdrop-filter:blur(14px);
+  border-radius:30px;
+  padding:45px;
+  transition:0.35s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(96,165,250,0.45);
+}
+
+.card h3{
+  color:#60a5fa;
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.card p{
+  color:#d1d5db;
+  line-height:1.8;
+  font-size:18px;
+}
+
+
+
+.history-section{
+  display:flex;
+  gap:70px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.history-text{
+  flex:1;
+  min-width:320px;
+}
+
+.history-text p{
+  color:#d1d5db;
+  line-height:1.9;
+  font-size:19px;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.history-stats{
+  flex:1;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.history-card{
+  background:rgba(17,24,39,0.75);
+  border:1px solid rgba(96,165,250,0.15);
+  border-radius:28px;
+  padding:45px;
+  text-align:center;
+  transition:0.35s;
+}
+
+.history-card:hover{
+  transform:translateY(-8px);
+}
+
+.history-card h3{
+  font-size:48px;
+  color:#60a5fa;
+  margin-bottom:12px;
+}
+
+.history-card p{
+  color:#d1d5db;
+  font-size:18px;
+}
+
+
+
+.tech-section{
+  display:flex;
+  gap:70px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.tech-text{
+  flex:1;
+  text-align:center;
+}
+
+.tech-text p{
+  color:#d1d5db;
+  line-height:1.9;
+  font-size:20px;
+  margin-bottom:35px;
+}
+
+.tech-section img{
+  width:520px;
+  max-width:100%;
+  border-radius:32px;
+  object-fit:cover;
+  transition:0.4s;
+  box-shadow:0 20px 60px rgba(37,99,235,0.25);
+}
+
+.tech-section img:hover{
+  transform:scale(1.02);
+}
+
+
+
+.advantages-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+.advantage{
+  background:rgba(17,24,39,0.75);
+  border:1px solid rgba(96,165,250,0.15);
+  border-radius:30px;
+  padding:45px;
+  transition:0.35s;
+}
+
+.advantage:hover{
+  transform:translateY(-10px);
+}
+
+.advantage h3{
+  color:#60a5fa;
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.advantage p{
+  color:#d1d5db;
+  line-height:1.8;
+  font-size:18px;
+}
+
+
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:28px;
+  transition:0.4s;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.03);
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+footer p{
+  color:#9ca3af;
+  margin:12px 0;
+  font-size:18px;
+}
+
+
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  justify-content:center;
+  align-items:center;
+  z-index:100;
+  padding:20px;
+}
+
+.modal-content{
+  width:100%;
+  max-width:650px;
+  background:#111827;
+  border:1px solid rgba(96,165,250,0.15);
+  border-radius:30px;
+  padding:45px;
+  position:relative;
+}
+
+.modal-content span{
+  position:absolute;
+  right:25px;
+  top:18px;
+  font-size:34px;
+  cursor:pointer;
+}
+
+.modal-content h2{
+  font-size:42px;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.modal-content p{
+  color:#d1d5db;
+  line-height:1.8;
+  margin-bottom:20px;
+  font-size:18px;
+}
+
+.modal-content input,
+.modal-content textarea{
+  width:100%;
+  margin-top:18px;
+  padding:18px;
+  border:none;
+  border-radius:14px;
+  background:#1f2937;
+  color:white;
+  font-size:16px;
+}
+
+textarea{
+  resize:none;
+  min-height:140px;
+}
+
+
+
+@media(max-width:900px){
+
+  nav{
+    padding:30px;
+    flex-direction:column;
+    gap:25px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero-content{
+    padding:150px 25px;
+  }
+
+  .hero-content h2{
+    font-size:54px;
+  }
+
+  .hero-content p{
+    font-size:20px;
+  }
+
+  .section,
+  .gallery,
+  .advantages,
+  .tech-section,
+  .history-section,
+  footer{
+    padding:80px 25px;
+  }
+
+  .section h2,
+  .gallery h2,
+  .advantages h2,
+  .tech-text h2,
+  .history-text h2,
+  footer h2{
+    font-size:42px;
+  }
+
+  .history-stats{
+    grid-template-columns:1fr;
+  }
+
+}

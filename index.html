@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Электроприбор Тамбов</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay"></div>
+
+    <nav>
+      <h1>Электроприбор</h1>
+
+      <div class="nav-links">
+        <a href="#about">О заводе</a>
+        <a href="#tech">Технологии</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Современное приборостроение</h2>
+
+      <p>
+        АО «Электроприбор» — высокотехнологичное предприятие Тамбова,
+        занимающееся разработкой электронных систем, автоматизированных
+        комплексов и современных приборов.
+      </p>
+
+      <div class="buttons">
+        <button onclick="openModal('aboutModal')">
+          Подробнее
+        </button>
+
+        <button class="secondary" onclick="openModal('contactModal')">
+          Связаться
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+
+    <h2>О предприятии</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>История</h3>
+
+        <p>
+          Предприятие имеет многолетний опыт в сфере разработки
+          и производства электронного оборудования.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Разработка</h3>
+
+        <p>
+          Завод внедряет современные инженерные технологии
+          и автоматизированные системы.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Сотрудничество</h3>
+
+        <p>
+          Предприятие активно взаимодействует с образовательными
+          учреждениями и молодыми специалистами.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="history-section">
+
+    <div class="history-text">
+
+      <h2>История предприятия</h2>
+
+      <p>
+        АО «Электроприбор» является одним из крупнейших предприятий
+        приборостроительной отрасли Тамбова.
+      </p>
+
+      <p>
+        Основным направлением деятельности предприятия является
+        разработка и производство современных электронных систем,
+        автоматизированных комплексов и высокоточного оборудования.
+      </p>
+
+      <p>
+        Сегодня предприятие активно внедряет цифровые технологии,
+        модернизирует производственные процессы и поддерживает
+        подготовку молодых специалистов.
+      </p>
+
+    </div>
+
+    <div class="history-stats">
+
+      <div class="history-card">
+        <h3>70+</h3>
+        <p>лет опыта</p>
+      </div>
+
+      <div class="history-card">
+        <h3>1000+</h3>
+        <p>сотрудников</p>
+      </div>
+
+      <div class="history-card">
+        <h3>24/7</h3>
+        <p>производственный цикл</p>
+      </div>
+
+      <div class="history-card">
+        <h3>IT</h3>
+        <p>современные технологии</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="tech" class="tech-section">
+
+    <div class="tech-text">
+
+      <h2>Технологии</h2>
+
+      <p>
+        Предприятие использует современные системы автоматизации,
+        цифровое проектирование и инновационные инженерные решения.
+      </p>
+
+      <button onclick="openModal('techModal')">
+        Подробнее
+      </button>
+
+    </div>
+
+    <img src="images/factory0.jpg" alt="Завод">
+
+  </section>
+
+  <section class="advantages">
+
+    <h2>Преимущества предприятия</h2>
+
+    <div class="advantages-grid">
+
+      <div class="advantage">
+        <h3>Современное оборудование</h3>
+
+        <p>
+          Использование современных технологий позволяет обеспечивать
+          высокое качество продукции.
+        </p>
+      </div>
+
+      <div class="advantage">
+        <h3>Квалифицированные специалисты</h3>
+
+        <p>
+          На предприятии работают инженеры и специалисты
+          с большим профессиональным опытом.
+        </p>
+      </div>
+
+      <div class="advantage">
+        <h3>Инновации</h3>
+
+        <p>
+          Внедрение новых инженерных решений помогает
+          развивать производство.
+        </p>
+      </div>
+
+      <div class="advantage">
+        <h3>Сотрудничество</h3>
+
+        <p>
+          Предприятие активно взаимодействует с учебными заведениями
+          и поддерживает молодых специалистов.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="gallery" class="gallery">
+
+    <h2>Галерея</h2>
+
+    <div class="gallery-grid">
+      <img src="images/factory1.jpg">
+      <img src="images/factory2.jpg">
+      <img src="images/factory3.jpg">
+    </div>
+
+  </section>
+
+  <footer id="contacts">
+
+    <h2>Контакты</h2>
+
+    <p>АО «Электроприбор»</p>
+    <p>Тамбов, Россия</p>
+    <p>info@electropribor.ru</p>
+
+    <button onclick="openModal('contactModal')">
+      Связаться
+    </button>
+
+  </footer>
+
+
+
+  <div class="modal" id="aboutModal">
+
+    <div class="modal-content">
+
+      <span onclick="closeModal('aboutModal')">&times;</span>
+
+      <h2>О заводе</h2>
+
+      <p>
+        АО «Электроприбор» занимается разработкой современных
+        электронных систем и высокоточного оборудования.
+      </p>
+
+      <p>
+        Предприятие внедряет инновационные технологии,
+        модернизирует производство и сотрудничает
+        с образовательными организациями.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="modal" id="techModal">
+
+    <div class="modal-content">
+
+      <span onclick="closeModal('techModal')">&times;</span>
+
+      <h2>Технологии</h2>
+
+      <p>
+        Завод использует современные инженерные решения,
+        автоматизированные линии производства и цифровые системы.
+      </p>
+
+      <p>
+        Предприятие активно внедряет новые подходы
+        к разработке и производству оборудования.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="modal" id="contactModal">
+
+    <div class="modal-content">
+
+      <span onclick="closeModal('contactModal')">&times;</span>
+
+      <h2>Связаться</h2>
+
+      <input type="text" placeholder="Ваше имя">
+
+      <input type="email" placeholder="Email">
+
+      <textarea placeholder="Сообщение"></textarea>
+
+      <button>Отправить</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
