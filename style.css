@@ -409,3 +409,40 @@ footer p{
     grid-template-columns:1fr;
   }
 }
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.modal-content{
+  width:90%;
+  max-width:600px;
+  background:#111827;
+  border-radius:30px;
+  padding:40px;
+  position:relative;
+  display:block;
+}
+
+.modal-content input,
+.modal-content textarea{
+  width:100%;
+  margin-top:15px;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.15);
+  background:#1f2937;
+  color:white;
+  font-size:15px;
+}
+
+.modal-content button{
+  margin-top:15px;
+  width:100%;
+}
